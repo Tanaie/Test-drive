@@ -9,7 +9,7 @@ function showTemp(response) {
 
 let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
 let apiUrl =
-  "http://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c";
+  "https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c";
 axios.get(apiUrl).then(showTemp);
 
 // PART 2 City Search
@@ -27,7 +27,7 @@ function city(event) {
       tempElement.innerHTML = `${mainTempy}°C`;
     }
     let place = `${citySearch.value}`;
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c`;
     axios.get(apiUrl).then(showTemp);
   }
 }
@@ -98,7 +98,7 @@ function fahrenClick(event) {
 
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c";
+    "https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c";
   axios.get(apiUrl).then(showTemp);
 }
 
@@ -115,7 +115,7 @@ function celciusClick(event) {
 
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c";
+    "https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=5f472b7acba333cd8a035ea85a0d4d4c";
   axios.get(apiUrl).then(showTemp);
 }
 
